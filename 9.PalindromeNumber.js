@@ -7,20 +7,16 @@ var isPalindrome = function(x) {
         return false;
     }
 
-    let w = [];
-    while (x) {
-        w.push(x % 10);
+    let revertedNumber = 0;
 
-        x = Math.floor(x / 10);
+    let num = x;
+    while (num) {
+        revertedNumber = revertedNumber * 10 + num % 10;
+
+        num = Math.floor(num / 10);
     }
 
-    for (let i = 0, j = w.length - 1; i <= j; i++, j--) {
-        if (w[i] != w[j]) {
-            return false;
-        }
-    }
-
-    return true;
+    return x === revertedNumber;
 };
 
-console.log(isPalindrome(121))
+console.log(isPalindrome(121));
