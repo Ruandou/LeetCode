@@ -3,7 +3,7 @@
  * @param {number[]} nums2
  * @return {number}
  */
-var findMedianSortedArrays = function(nums1, nums2) {
+var findMedianSortedArrays = function (nums1, nums2) {
     let len = nums1.length + nums2.length;
     let mid = Math.ceil(len / 2);
 
@@ -28,7 +28,7 @@ var findKSortedArrays = function (nums1, nums2, k) {
     return nums1[index];
 }
 
-var findKIndexSortedArrays = function(nums1, nums2, k) {
+var findKIndexSortedArrays = function (nums1, nums2, k) {
     let l = 0;
     let r = Math.min(nums1.length, k) - 1;
 
