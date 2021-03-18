@@ -8,9 +8,9 @@ var numDistinct = function(s, t) {
         return 0;
     }
 
-    let result = new Array(s.length);
+    let result = [];
     for (let i = 0; i < s.length; i++) {
-        result[i] = new Array(t.length);
+        result[i] = [];
     }
 
     if (s[0] === t[0]) {
