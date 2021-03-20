@@ -2,7 +2,7 @@
  * @param {string[]} tokens
  * @return {number}
  */
- var evalRPN = function(tokens) {
+var evalRPN = function(tokens) {
     let operators = new Set(['+', '-', '*', '/']);
     let stack = [];
 
